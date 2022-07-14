@@ -1,1 +1,8 @@
 image: gitpod/workspace-dotnet-vnc
+
+tasks:
+   - before: sudo apt update && sudo apt install postgresql -y
+
+ports: 
+ - name : postgres
+   port: 5432
